@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--    <style>-->
+<!--        table,th,td-->
+<!--        {-->
+<!--            border:1px solid black;-->
+<!--        }-->
+<!--    </style>-->
+<h1>view books</h1>
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <th>TITLE</th>-->
+<!--            <th>AUTHOR</th>-->
+<!--            <th>PRICE</th>-->
+<!--        </tr>-->
+
+<!--        {% for i in b %}-->
+<!--        <tr>-->
+<!--            <td>{{i.title}}</td>-->
+<!--            <td>{{i.author}}</td>-->
+<!--            <td>{{i.price}}</td>-->
+<!--        </tr>-->
+<!--        {% endfor %}-->
+<!--    </table>-->
+<!--{{b}}-->
+
+
+
+    <h2>1. Book details</h2>
+
+    {% for i in b %}
+    <ul>
+        <li>
+            <strong>TITLE:</strong> {{i.title}},
+            <strong>AUTHOR:</strong> {{i.author}},
+            <strong>PRICE:</strong> {{i.price}}
+        </li>
+    </ul>
+{% endfor %}
+
+
+
+
+
+
+
+
+{% endblock %}
